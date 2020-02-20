@@ -1,12 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { RegisterComponent } from './components/register/register.component';
 import { HomeComponent } from './components/home/home.component';
+import { NgControlValueAccessorComponent } from './components/ng-control-value-accessor/ng-control-value-accessor.component';
+import { RxDebounceTimeComponent } from './components/rx-debounce-time/rx-debounce-time.component';
 
 const routes: Routes = [
   {
-    path: 'register',
-    component: RegisterComponent
+    path: 'ngCVA',
+    component: NgControlValueAccessorComponent
+  },
+  {
+    path: 'rxDT',
+    component: RxDebounceTimeComponent
   },
   {
     path: '',
