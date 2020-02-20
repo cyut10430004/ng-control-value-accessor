@@ -1,0 +1,23 @@
+<mat-card class="mat-elevation-z5">
+  <form [formGroup]="form" style="width: 35vw;">
+    <h2>Demo</h2>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Normal</mat-label>
+        <input formControlName="normal" matInput>
+      </mat-form-field>
+      value: {{ normalValue }}
+    </p>
+    <p>
+      <mat-form-field appearance="legacy">
+        <mat-label>Use Debounce</mat-label>
+        <input formControlName="useDebounce"  matInput>
+      </mat-form-field>
+      value: {{ useDebounceValue }}
+    </p>
+  </form>
+  <br>
+</mat-card>
+
+
+
